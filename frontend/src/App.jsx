@@ -1,11 +1,13 @@
-import './App.css'
+import React from 'react';
+import { BuilderProvider } from './context/BuilderContext';
+import MainLayout from './components/Layout/MainLayout';
 
 function App() {
   return (
-    <div className="app">
-      <h1>PixlDrag</h1>
-    </div>
-  )
+    <BuilderProvider>
+      <MainLayout />
+    </BuilderProvider>
+  );
 }
 
-export default App
+export default App;
